@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>642</width>
+    <height>525</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton_login">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>200</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>642</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menu_set">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>颜色</string>
+    </property>
+    <addaction name="actionColor"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>字体</string>
+    </property>
+    <addaction name="actionFont"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_set"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionFont">
+   <property name="text">
+    <string>Font</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
